@@ -15,7 +15,6 @@ class RouteCollectionViewModelTests: XCTestCase {
 
     override func setUp() {
         viewModel = RouteCollectionViewModel()
-        viewModel.viewDidload()
     }
 
     override func tearDown() {}
@@ -65,10 +64,15 @@ class RouteCollectionViewModelTests: XCTestCase {
     }
 
     func testSettingAirport() {
+        let expectation = self.expectation(description: "Fetching Airports")
+        viewModel.getAllAirports {
+            expectation.fulfill()
+        }
+        waitForExpectations(timeout: 15, handler: nil)
         viewModel.editingTextField = .arrival
-        let airport = Airport(name: "Test name", city: "Test city", iata: "YNN", latitude: "22222", longitude: "333", country: "Nigeria")
+        let airport = Airport(name: "Krasnodar Pashkovsky International Airport", city: "Krasnodar", iata: "KRR", latitude: "45.03469849", longitude: "39.17050171", country: "Russia")
         XCTAssertNotEqual(viewModel.outputs.arrivalAirport, airport)
-        viewModel.set(airport: airport)
+        viewModel.inputs.selectedAirport(with: airport.name)
         XCTAssertEqual(viewModel.outputs.arrivalAirport, airport)
     }
 }

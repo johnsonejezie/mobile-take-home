@@ -10,8 +10,7 @@ import Foundation
 
 protocol RouteCollectionViewModelInputs {
     func search(text: String, completion: @escaping (() -> Void))
-    func set(airport: Airport)
-    func viewDidload()
+    func selectedAirport(with name: String)
 }
 
 protocol RouteCollectionViewModelOutputs {
@@ -19,6 +18,7 @@ protocol RouteCollectionViewModelOutputs {
     var editingTextField: EditingTextField { get }
     var departureAirport: Airport? { get }
     var arrivalAirport: Airport? { get }
+    var isSearchButtonEnabled: Observable<Bool> { get }
 }
 
 protocol RouteCollectionViewModelType {
@@ -30,13 +30,14 @@ final class RouteCollectionViewModel: RouteCollectionViewModelType, RouteCollect
 
     private var allAirports: [Airport] = []
 
-    func viewDidload() {
-        getAllAirports()
+    init() {
+        getAllAirports {}
     }
 
-    private func getAllAirports() {
+    func getAllAirports(_ completion: @escaping (() -> Void)) {
         Airport.parseCSV { (airports) in
             self.allAirports = airports
+            completion()
         }
     }
 
@@ -53,7 +54,8 @@ final class RouteCollectionViewModel: RouteCollectionViewModelType, RouteCollect
         }
     }
 
-    func set(airport: Airport) {
+    func selectedAirport(with name: String) {
+        let airport = allAirports.first(where: { $0.name.lowercased() == name.lowercased() })
         switch editingTextField {
         case .arrival:
             arrivalAirport = airport
@@ -62,7 +64,20 @@ final class RouteCollectionViewModel: RouteCollectionViewModelType, RouteCollect
         default:
             break
         }
+        guard let arrival = arrivalAirport,
+            let departure = departureAirport else {
+                isSearchButtonEnabled.value = false
+                return
+        }
+        if arrival == departure {
+            isSearchButtonEnabled.value = false
+            return
+        }
+
+        isSearchButtonEnabled.value = true
     }
+
+    var isSearchButtonEnabled: Observable<Bool> = Observable(false)
 
     var arrivalAirport: Airport?
 
