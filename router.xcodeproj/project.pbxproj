@@ -12,7 +12,6 @@
 		A50A43462286B6C7000C18D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50A43442286B6C7000C18D3 /* Main.storyboard */; };
 		A50A43482286B6C7000C18D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50A43472286B6C7000C18D3 /* Assets.xcassets */; };
 		A50A434B2286B6C7000C18D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50A43492286B6C7000C18D3 /* LaunchScreen.storyboard */; };
-		A50A43562286B6C7000C18D3 /* routerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43552286B6C7000C18D3 /* routerTests.swift */; };
 		A50A43612286B6C7000C18D3 /* routerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43602286B6C7000C18D3 /* routerUITests.swift */; };
 		A50A43722286B700000C18D3 /* routes.csv in Resources */ = {isa = PBXBuildFile; fileRef = A50A436F2286B700000C18D3 /* routes.csv */; };
 		A50A43732286B700000C18D3 /* airlines.csv in Resources */ = {isa = PBXBuildFile; fileRef = A50A43702286B700000C18D3 /* airlines.csv */; };
@@ -24,7 +23,6 @@
 		A50A43872286BABC000C18D3 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A437F2286BABC000C18D3 /* Globals.swift */; };
 		A50A43882286BABC000C18D3 /* TextFileStreamReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43802286BABC000C18D3 /* TextFileStreamReader.swift */; };
 		A50A43892286BABC000C18D3 /* FileSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43812286BABC000C18D3 /* FileSource.swift */; };
-		A50A438B2286BB15000C18D3 /* CSVParsingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A438A2286BB15000C18D3 /* CSVParsingTests.swift */; };
 		A50A438E2286C090000C18D3 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A438D2286C090000C18D3 /* Route.swift */; };
 		A50A43A32286C6A5000C18D3 /* CollectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43912286C6A5000C18D3 /* CollectionExtension.swift */; };
 		A50A43A42286C6A5000C18D3 /* ComparableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43922286C6A5000C18D3 /* ComparableExtension.swift */; };
@@ -44,6 +42,14 @@
 		A50A43B22286C6A5000C18D3 /* Withable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43A22286C6A5000C18D3 /* Withable.swift */; };
 		A50A43B52286CB72000C18D3 /* Airline.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43B42286CB72000C18D3 /* Airline.swift */; };
 		A50A43B72286D177000C18D3 /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43B62286D177000C18D3 /* Airport.swift */; };
+		A50A43BF2286ECF3000C18D3 /* map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50A43BE2286ECF3000C18D3 /* map.storyboard */; };
+		A50A43C12286ED4C000C18D3 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43C02286ED4C000C18D3 /* MapViewController.swift */; };
+		A50A43C32286EE0D000C18D3 /* RouteCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43C22286EE0D000C18D3 /* RouteCollectionViewController.swift */; };
+		A50A43C52286F78F000C18D3 /* RouteCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43C42286F78F000C18D3 /* RouteCollectionViewModel.swift */; };
+		A50A43C82286F9A2000C18D3 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43C72286F9A2000C18D3 /* Observable.swift */; };
+		A50A43CC22870883000C18D3 /* AirportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43CB22870883000C18D3 /* AirportTests.swift */; };
+		A50A43CE228710A6000C18D3 /* AirlineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43CD228710A6000C18D3 /* AirlineTests.swift */; };
+		A50A43D022871107000C18D3 /* RouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43CF22871107000C18D3 /* RouteTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +78,6 @@
 		A50A434A2286B6C7000C18D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A50A434C2286B6C7000C18D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A50A43512286B6C7000C18D3 /* routerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = routerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A50A43552286B6C7000C18D3 /* routerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = routerTests.swift; sourceTree = "<group>"; };
 		A50A43572286B6C7000C18D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A50A435C2286B6C7000C18D3 /* routerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = routerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A50A43602286B6C7000C18D3 /* routerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = routerUITests.swift; sourceTree = "<group>"; };
@@ -88,7 +93,6 @@
 		A50A437F2286BABC000C18D3 /* Globals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		A50A43802286BABC000C18D3 /* TextFileStreamReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFileStreamReader.swift; sourceTree = "<group>"; };
 		A50A43812286BABC000C18D3 /* FileSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileSource.swift; sourceTree = "<group>"; };
-		A50A438A2286BB15000C18D3 /* CSVParsingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVParsingTests.swift; sourceTree = "<group>"; };
 		A50A438D2286C090000C18D3 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		A50A43912286C6A5000C18D3 /* CollectionExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionExtension.swift; sourceTree = "<group>"; };
 		A50A43922286C6A5000C18D3 /* ComparableExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComparableExtension.swift; sourceTree = "<group>"; };
@@ -109,6 +113,14 @@
 		A50A43B32286C6B6000C18D3 /* HandySwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandySwift.h; sourceTree = "<group>"; };
 		A50A43B42286CB72000C18D3 /* Airline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airline.swift; sourceTree = "<group>"; };
 		A50A43B62286D177000C18D3 /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
+		A50A43BE2286ECF3000C18D3 /* map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = map.storyboard; sourceTree = "<group>"; };
+		A50A43C02286ED4C000C18D3 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		A50A43C22286EE0D000C18D3 /* RouteCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteCollectionViewController.swift; sourceTree = "<group>"; };
+		A50A43C42286F78F000C18D3 /* RouteCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteCollectionViewModel.swift; sourceTree = "<group>"; };
+		A50A43C72286F9A2000C18D3 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		A50A43CB22870883000C18D3 /* AirportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportTests.swift; sourceTree = "<group>"; };
+		A50A43CD228710A6000C18D3 /* AirlineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirlineTests.swift; sourceTree = "<group>"; };
+		A50A43CF22871107000C18D3 /* RouteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +171,8 @@
 		A50A433F2286B6C7000C18D3 /* router */ = {
 			isa = PBXGroup;
 			children = (
+				A50A43C62286F96F000C18D3 /* Common */,
+				A50A43B82286ECDA000C18D3 /* Features */,
 				A50A438C2286C084000C18D3 /* Models */,
 				A50A43752286BA41000C18D3 /* Vendors */,
 				A50A436E2286B700000C18D3 /* data */,
@@ -175,9 +189,10 @@
 		A50A43542286B6C7000C18D3 /* routerTests */ = {
 			isa = PBXGroup;
 			children = (
-				A50A43552286B6C7000C18D3 /* routerTests.swift */,
 				A50A43572286B6C7000C18D3 /* Info.plist */,
-				A50A438A2286BB15000C18D3 /* CSVParsingTests.swift */,
+				A50A43CB22870883000C18D3 /* AirportTests.swift */,
+				A50A43CD228710A6000C18D3 /* AirlineTests.swift */,
+				A50A43CF22871107000C18D3 /* RouteTests.swift */,
 			);
 			path = routerTests;
 			sourceTree = "<group>";
@@ -299,6 +314,65 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		A50A43B82286ECDA000C18D3 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				A50A43B92286ECDA000C18D3 /* Map */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		A50A43B92286ECDA000C18D3 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				A50A43BA2286ECDA000C18D3 /* Storyboards */,
+				A50A43BB2286ECDA000C18D3 /* ViewModels */,
+				A50A43BC2286ECDA000C18D3 /* Controllers */,
+				A50A43BD2286ECDA000C18D3 /* Views */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		A50A43BA2286ECDA000C18D3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A50A43BE2286ECF3000C18D3 /* map.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		A50A43BB2286ECDA000C18D3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A50A43C42286F78F000C18D3 /* RouteCollectionViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A50A43BC2286ECDA000C18D3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A50A43C02286ED4C000C18D3 /* MapViewController.swift */,
+				A50A43C22286EE0D000C18D3 /* RouteCollectionViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A50A43BD2286ECDA000C18D3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A50A43C62286F96F000C18D3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A50A43C72286F9A2000C18D3 /* Observable.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -405,6 +479,7 @@
 			files = (
 				A50A434B2286B6C7000C18D3 /* LaunchScreen.storyboard in Resources */,
 				A50A43732286B700000C18D3 /* airlines.csv in Resources */,
+				A50A43BF2286ECF3000C18D3 /* map.storyboard in Resources */,
 				A50A43742286B700000C18D3 /* airports.csv in Resources */,
 				A50A43482286B6C7000C18D3 /* Assets.xcassets in Resources */,
 				A50A43722286B700000C18D3 /* routes.csv in Resources */,
@@ -442,15 +517,18 @@
 				A50A43B52286CB72000C18D3 /* Airline.swift in Sources */,
 				A50A43882286BABC000C18D3 /* TextFileStreamReader.swift in Sources */,
 				A50A43B12286C6A5000C18D3 /* Weak.swift in Sources */,
+				A50A43C52286F78F000C18D3 /* RouteCollectionViewModel.swift in Sources */,
 				A50A43A42286C6A5000C18D3 /* ComparableExtension.swift in Sources */,
 				A50A43432286B6C7000C18D3 /* ViewController.swift in Sources */,
 				A50A438E2286C090000C18D3 /* Route.swift in Sources */,
 				A50A43B22286C6A5000C18D3 /* Withable.swift in Sources */,
 				A50A43AC2286C6A5000C18D3 /* HSGlobals.swift in Sources */,
 				A50A43862286BABC000C18D3 /* CSVImporter.swift in Sources */,
+				A50A43C82286F9A2000C18D3 /* Observable.swift in Sources */,
 				A50A43A92286C6A5000C18D3 /* StringExtension.swift in Sources */,
 				A50A43AA2286C6A5000C18D3 /* DictionaryExtension.swift in Sources */,
 				A50A43B72286D177000C18D3 /* Airport.swift in Sources */,
+				A50A43C32286EE0D000C18D3 /* RouteCollectionViewController.swift in Sources */,
 				A50A43412286B6C7000C18D3 /* AppDelegate.swift in Sources */,
 				A50A43842286BABC000C18D3 /* TextFile.swift in Sources */,
 				A50A43A62286C6A5000C18D3 /* IntExtension.swift in Sources */,
@@ -460,6 +538,7 @@
 				A50A43892286BABC000C18D3 /* FileSource.swift in Sources */,
 				A50A43A52286C6A5000C18D3 /* ArrayExtension.swift in Sources */,
 				A50A43AF2286C6A5000C18D3 /* Unowned.swift in Sources */,
+				A50A43C12286ED4C000C18D3 /* MapViewController.swift in Sources */,
 				A50A43AE2286C6A5000C18D3 /* Regex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -468,8 +547,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A50A43562286B6C7000C18D3 /* routerTests.swift in Sources */,
-				A50A438B2286BB15000C18D3 /* CSVParsingTests.swift in Sources */,
+				A50A43D022871107000C18D3 /* RouteTests.swift in Sources */,
+				A50A43CE228710A6000C18D3 /* AirlineTests.swift in Sources */,
+				A50A43CC22870883000C18D3 /* AirportTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
