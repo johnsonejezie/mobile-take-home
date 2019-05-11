@@ -25,18 +25,15 @@ class Airline: Equatable {
         self.country = country
     }
 
-    static var airlines: [Airline] = []
-
-    static func parseCSV(_ completion: @escaping (() -> Void)) {
+    static func parseCSV(_ completion: @escaping (([Airline]) -> Void)) {
         let path = Bundle.main.path(forResource: "airlines", ofType: "csv")!
         let routeImporter = CSVImporter<Airline>(path: path)
         routeImporter.startImportingRecords(structure: { (headerValues) in
             print(headerValues)
         }) { (recordValues) -> Airline in
             return Airline(name: recordValues["Name"]!, twoDigitCode: recordValues["2 Digit Code"]!, threeDigitCode: recordValues["3 Digit Code"]!, country: recordValues["Country"]!)
-            }.onFinish { (importedRecords) -> Void in
-                airlines = importedRecords
-                completion()
+            }.onFinish { (airlines) -> Void in
+                completion(airlines)
         }
     }
 

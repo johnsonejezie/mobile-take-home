@@ -34,19 +34,15 @@ class Airport: Equatable {
         self.country = country
     }
 
-    static var airports: [Airport] = []
-
-    static func parseCSV(_ completion: @escaping (() -> Void)) {
+    static func parseCSV(_ completion: @escaping (([Airport]) -> Void)) {
         let path = Bundle.main.path(forResource: "airports", ofType: "csv")!
         let routeImporter = CSVImporter<Airport>(path: path)
         routeImporter.startImportingRecords(structure: { (headerValues) in
             print(headerValues)
         }) { (recordValues) -> Airport in
             return Airport(name: recordValues["Name"]!, city: recordValues["City"]!, iata: recordValues["IATA 3"]!, latitude: recordValues["Latitute "]!, longitude: recordValues["Longitude"]!, country: recordValues["Country"]!)
-            }.onFinish { (importedRecords) -> Void in
-                airports = importedRecords
-                completion()
+            }.onFinish { (airports) -> Void in
+                completion(airports)
         }
     }
-
 }
