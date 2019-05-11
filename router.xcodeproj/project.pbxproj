@@ -17,6 +17,31 @@
 		A50A43722286B700000C18D3 /* routes.csv in Resources */ = {isa = PBXBuildFile; fileRef = A50A436F2286B700000C18D3 /* routes.csv */; };
 		A50A43732286B700000C18D3 /* airlines.csv in Resources */ = {isa = PBXBuildFile; fileRef = A50A43702286B700000C18D3 /* airlines.csv */; };
 		A50A43742286B700000C18D3 /* airports.csv in Resources */ = {isa = PBXBuildFile; fileRef = A50A43712286B700000C18D3 /* airports.csv */; };
+		A50A43832286BABC000C18D3 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A437B2286BABC000C18D3 /* Source.swift */; };
+		A50A43842286BABC000C18D3 /* TextFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A437C2286BABC000C18D3 /* TextFile.swift */; };
+		A50A43852286BABC000C18D3 /* StringSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A437D2286BABC000C18D3 /* StringSource.swift */; };
+		A50A43862286BABC000C18D3 /* CSVImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A437E2286BABC000C18D3 /* CSVImporter.swift */; };
+		A50A43872286BABC000C18D3 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A437F2286BABC000C18D3 /* Globals.swift */; };
+		A50A43882286BABC000C18D3 /* TextFileStreamReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43802286BABC000C18D3 /* TextFileStreamReader.swift */; };
+		A50A43892286BABC000C18D3 /* FileSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43812286BABC000C18D3 /* FileSource.swift */; };
+		A50A438B2286BB15000C18D3 /* CSVParsingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A438A2286BB15000C18D3 /* CSVParsingTests.swift */; };
+		A50A438E2286C090000C18D3 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A438D2286C090000C18D3 /* Route.swift */; };
+		A50A43A32286C6A5000C18D3 /* CollectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43912286C6A5000C18D3 /* CollectionExtension.swift */; };
+		A50A43A42286C6A5000C18D3 /* ComparableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43922286C6A5000C18D3 /* ComparableExtension.swift */; };
+		A50A43A52286C6A5000C18D3 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43932286C6A5000C18D3 /* ArrayExtension.swift */; };
+		A50A43A62286C6A5000C18D3 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43942286C6A5000C18D3 /* IntExtension.swift */; };
+		A50A43A72286C6A5000C18D3 /* TimeIntervalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43952286C6A5000C18D3 /* TimeIntervalExtension.swift */; };
+		A50A43A82286C6A5000C18D3 /* NSRangeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43962286C6A5000C18D3 /* NSRangeExtension.swift */; };
+		A50A43A92286C6A5000C18D3 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43972286C6A5000C18D3 /* StringExtension.swift */; };
+		A50A43AA2286C6A5000C18D3 /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43982286C6A5000C18D3 /* DictionaryExtension.swift */; };
+		A50A43AB2286C6A5000C18D3 /* DispatchTimeIntervalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43992286C6A5000C18D3 /* DispatchTimeIntervalExtension.swift */; };
+		A50A43AC2286C6A5000C18D3 /* HSGlobals.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A439A2286C6A5000C18D3 /* HSGlobals.swift */; };
+		A50A43AD2286C6A5000C18D3 /* FrequencyTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A439C2286C6A5000C18D3 /* FrequencyTable.swift */; };
+		A50A43AE2286C6A5000C18D3 /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A439D2286C6A5000C18D3 /* Regex.swift */; };
+		A50A43AF2286C6A5000C18D3 /* Unowned.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A439E2286C6A5000C18D3 /* Unowned.swift */; };
+		A50A43B02286C6A5000C18D3 /* SortedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A439F2286C6A5000C18D3 /* SortedArray.swift */; };
+		A50A43B12286C6A5000C18D3 /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43A02286C6A5000C18D3 /* Weak.swift */; };
+		A50A43B22286C6A5000C18D3 /* Withable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43A22286C6A5000C18D3 /* Withable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +78,33 @@
 		A50A436F2286B700000C18D3 /* routes.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = routes.csv; sourceTree = "<group>"; };
 		A50A43702286B700000C18D3 /* airlines.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = airlines.csv; sourceTree = "<group>"; };
 		A50A43712286B700000C18D3 /* airports.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = airports.csv; sourceTree = "<group>"; };
+		A50A43782286BABC000C18D3 /* CSVImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSVImporter.h; sourceTree = "<group>"; };
+		A50A437B2286BABC000C18D3 /* Source.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
+		A50A437C2286BABC000C18D3 /* TextFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFile.swift; sourceTree = "<group>"; };
+		A50A437D2286BABC000C18D3 /* StringSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringSource.swift; sourceTree = "<group>"; };
+		A50A437E2286BABC000C18D3 /* CSVImporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVImporter.swift; sourceTree = "<group>"; };
+		A50A437F2286BABC000C18D3 /* Globals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		A50A43802286BABC000C18D3 /* TextFileStreamReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFileStreamReader.swift; sourceTree = "<group>"; };
+		A50A43812286BABC000C18D3 /* FileSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileSource.swift; sourceTree = "<group>"; };
+		A50A438A2286BB15000C18D3 /* CSVParsingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVParsingTests.swift; sourceTree = "<group>"; };
+		A50A438D2286C090000C18D3 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		A50A43912286C6A5000C18D3 /* CollectionExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionExtension.swift; sourceTree = "<group>"; };
+		A50A43922286C6A5000C18D3 /* ComparableExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComparableExtension.swift; sourceTree = "<group>"; };
+		A50A43932286C6A5000C18D3 /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		A50A43942286C6A5000C18D3 /* IntExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
+		A50A43952286C6A5000C18D3 /* TimeIntervalExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeIntervalExtension.swift; sourceTree = "<group>"; };
+		A50A43962286C6A5000C18D3 /* NSRangeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSRangeExtension.swift; sourceTree = "<group>"; };
+		A50A43972286C6A5000C18D3 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		A50A43982286C6A5000C18D3 /* DictionaryExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
+		A50A43992286C6A5000C18D3 /* DispatchTimeIntervalExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchTimeIntervalExtension.swift; sourceTree = "<group>"; };
+		A50A439A2286C6A5000C18D3 /* HSGlobals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSGlobals.swift; sourceTree = "<group>"; };
+		A50A439C2286C6A5000C18D3 /* FrequencyTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrequencyTable.swift; sourceTree = "<group>"; };
+		A50A439D2286C6A5000C18D3 /* Regex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
+		A50A439E2286C6A5000C18D3 /* Unowned.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Unowned.swift; sourceTree = "<group>"; };
+		A50A439F2286C6A5000C18D3 /* SortedArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortedArray.swift; sourceTree = "<group>"; };
+		A50A43A02286C6A5000C18D3 /* Weak.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weak.swift; sourceTree = "<group>"; };
+		A50A43A22286C6A5000C18D3 /* Withable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Withable.swift; sourceTree = "<group>"; };
+		A50A43B32286C6B6000C18D3 /* HandySwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandySwift.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +155,8 @@
 		A50A433F2286B6C7000C18D3 /* router */ = {
 			isa = PBXGroup;
 			children = (
+				A50A438C2286C084000C18D3 /* Models */,
+				A50A43752286BA41000C18D3 /* Vendors */,
 				A50A436E2286B700000C18D3 /* data */,
 				A50A43402286B6C7000C18D3 /* AppDelegate.swift */,
 				A50A43422286B6C7000C18D3 /* ViewController.swift */,
@@ -119,6 +173,7 @@
 			children = (
 				A50A43552286B6C7000C18D3 /* routerTests.swift */,
 				A50A43572286B6C7000C18D3 /* Info.plist */,
+				A50A438A2286BB15000C18D3 /* CSVParsingTests.swift */,
 			);
 			path = routerTests;
 			sourceTree = "<group>";
@@ -141,6 +196,102 @@
 			);
 			path = data;
 			sourceTree = SOURCE_ROOT;
+		};
+		A50A43752286BA41000C18D3 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				A50A43762286BAAD000C18D3 /* CSV */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		A50A43762286BAAD000C18D3 /* CSV */ = {
+			isa = PBXGroup;
+			children = (
+				A50A438F2286C6A5000C18D3 /* HandySwift */,
+				A50A437A2286BABC000C18D3 /* CSVImporter */,
+				A50A43772286BABC000C18D3 /* SupportingFiles */,
+			);
+			path = CSV;
+			sourceTree = "<group>";
+		};
+		A50A43772286BABC000C18D3 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				A50A43B32286C6B6000C18D3 /* HandySwift.h */,
+				A50A43782286BABC000C18D3 /* CSVImporter.h */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		A50A437A2286BABC000C18D3 /* CSVImporter */ = {
+			isa = PBXGroup;
+			children = (
+				A50A437B2286BABC000C18D3 /* Source.swift */,
+				A50A437C2286BABC000C18D3 /* TextFile.swift */,
+				A50A437D2286BABC000C18D3 /* StringSource.swift */,
+				A50A437E2286BABC000C18D3 /* CSVImporter.swift */,
+				A50A437F2286BABC000C18D3 /* Globals.swift */,
+				A50A43802286BABC000C18D3 /* TextFileStreamReader.swift */,
+				A50A43812286BABC000C18D3 /* FileSource.swift */,
+			);
+			path = CSVImporter;
+			sourceTree = "<group>";
+		};
+		A50A438C2286C084000C18D3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A50A438D2286C090000C18D3 /* Route.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A50A438F2286C6A5000C18D3 /* HandySwift */ = {
+			isa = PBXGroup;
+			children = (
+				A50A43902286C6A5000C18D3 /* Extensions */,
+				A50A439A2286C6A5000C18D3 /* HSGlobals.swift */,
+				A50A439B2286C6A5000C18D3 /* Structs */,
+				A50A43A12286C6A5000C18D3 /* Protocols */,
+			);
+			path = HandySwift;
+			sourceTree = "<group>";
+		};
+		A50A43902286C6A5000C18D3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A50A43912286C6A5000C18D3 /* CollectionExtension.swift */,
+				A50A43922286C6A5000C18D3 /* ComparableExtension.swift */,
+				A50A43932286C6A5000C18D3 /* ArrayExtension.swift */,
+				A50A43942286C6A5000C18D3 /* IntExtension.swift */,
+				A50A43952286C6A5000C18D3 /* TimeIntervalExtension.swift */,
+				A50A43962286C6A5000C18D3 /* NSRangeExtension.swift */,
+				A50A43972286C6A5000C18D3 /* StringExtension.swift */,
+				A50A43982286C6A5000C18D3 /* DictionaryExtension.swift */,
+				A50A43992286C6A5000C18D3 /* DispatchTimeIntervalExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A50A439B2286C6A5000C18D3 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				A50A439C2286C6A5000C18D3 /* FrequencyTable.swift */,
+				A50A439D2286C6A5000C18D3 /* Regex.swift */,
+				A50A439E2286C6A5000C18D3 /* Unowned.swift */,
+				A50A439F2286C6A5000C18D3 /* SortedArray.swift */,
+				A50A43A02286C6A5000C18D3 /* Weak.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		A50A43A12286C6A5000C18D3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A50A43A22286C6A5000C18D3 /* Withable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -276,8 +427,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A50A43A32286C6A5000C18D3 /* CollectionExtension.swift in Sources */,
+				A50A43AD2286C6A5000C18D3 /* FrequencyTable.swift in Sources */,
+				A50A43AB2286C6A5000C18D3 /* DispatchTimeIntervalExtension.swift in Sources */,
+				A50A43A72286C6A5000C18D3 /* TimeIntervalExtension.swift in Sources */,
+				A50A43B02286C6A5000C18D3 /* SortedArray.swift in Sources */,
+				A50A43852286BABC000C18D3 /* StringSource.swift in Sources */,
+				A50A43882286BABC000C18D3 /* TextFileStreamReader.swift in Sources */,
+				A50A43B12286C6A5000C18D3 /* Weak.swift in Sources */,
+				A50A43A42286C6A5000C18D3 /* ComparableExtension.swift in Sources */,
 				A50A43432286B6C7000C18D3 /* ViewController.swift in Sources */,
+				A50A438E2286C090000C18D3 /* Route.swift in Sources */,
+				A50A43B22286C6A5000C18D3 /* Withable.swift in Sources */,
+				A50A43AC2286C6A5000C18D3 /* HSGlobals.swift in Sources */,
+				A50A43862286BABC000C18D3 /* CSVImporter.swift in Sources */,
+				A50A43A92286C6A5000C18D3 /* StringExtension.swift in Sources */,
+				A50A43AA2286C6A5000C18D3 /* DictionaryExtension.swift in Sources */,
 				A50A43412286B6C7000C18D3 /* AppDelegate.swift in Sources */,
+				A50A43842286BABC000C18D3 /* TextFile.swift in Sources */,
+				A50A43A62286C6A5000C18D3 /* IntExtension.swift in Sources */,
+				A50A43872286BABC000C18D3 /* Globals.swift in Sources */,
+				A50A43A82286C6A5000C18D3 /* NSRangeExtension.swift in Sources */,
+				A50A43832286BABC000C18D3 /* Source.swift in Sources */,
+				A50A43892286BABC000C18D3 /* FileSource.swift in Sources */,
+				A50A43A52286C6A5000C18D3 /* ArrayExtension.swift in Sources */,
+				A50A43AF2286C6A5000C18D3 /* Unowned.swift in Sources */,
+				A50A43AE2286C6A5000C18D3 /* Regex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +461,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A50A43562286B6C7000C18D3 /* routerTests.swift in Sources */,
+				A50A438B2286BB15000C18D3 /* CSVParsingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
