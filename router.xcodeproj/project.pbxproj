@@ -42,6 +42,7 @@
 		A50A43B02286C6A5000C18D3 /* SortedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A439F2286C6A5000C18D3 /* SortedArray.swift */; };
 		A50A43B12286C6A5000C18D3 /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43A02286C6A5000C18D3 /* Weak.swift */; };
 		A50A43B22286C6A5000C18D3 /* Withable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43A22286C6A5000C18D3 /* Withable.swift */; };
+		A50A43B52286CB72000C18D3 /* Airline.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43B42286CB72000C18D3 /* Airline.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 		A50A43A02286C6A5000C18D3 /* Weak.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weak.swift; sourceTree = "<group>"; };
 		A50A43A22286C6A5000C18D3 /* Withable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Withable.swift; sourceTree = "<group>"; };
 		A50A43B32286C6B6000C18D3 /* HandySwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandySwift.h; sourceTree = "<group>"; };
+		A50A43B42286CB72000C18D3 /* Airline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airline.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				A50A438D2286C090000C18D3 /* Route.swift */,
+				A50A43B42286CB72000C18D3 /* Airline.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -433,6 +436,7 @@
 				A50A43A72286C6A5000C18D3 /* TimeIntervalExtension.swift in Sources */,
 				A50A43B02286C6A5000C18D3 /* SortedArray.swift in Sources */,
 				A50A43852286BABC000C18D3 /* StringSource.swift in Sources */,
+				A50A43B52286CB72000C18D3 /* Airline.swift in Sources */,
 				A50A43882286BABC000C18D3 /* TextFileStreamReader.swift in Sources */,
 				A50A43B12286C6A5000C18D3 /* Weak.swift in Sources */,
 				A50A43A42286C6A5000C18D3 /* ComparableExtension.swift in Sources */,
