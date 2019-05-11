@@ -25,7 +25,7 @@ class Route: Equatable {
 
 
     static func parseCSV(_ completion: @escaping (([Route]) -> Void)) {
-        let path = Bundle.main.path(forResource: "routes", ofType: "csv")!
+        let path = Bundle.init(for: Route.self).path(forResource: "routes", ofType: "csv")!
         let routeImporter = CSVImporter<Route>(path: path)
         routeImporter.startImportingRecords(structure: { (headerValues) in
             print(headerValues)
