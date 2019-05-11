@@ -48,5 +48,21 @@ class CSVParsingTests: XCTestCase {
         XCTAssert(airline?.country != nil)
     }
 
+    func testParsingAirportCSVToAirportClass() {
+        let expectation = self.expectation(description: "Parsing Airport CSV")
+        Airport.parseCSV {
+            expectation.fulfill()
+        }
+        waitForExpectations(timeout: 5, handler: nil)
+        XCTAssertTrue(!Airport.airports.isEmpty, "airports is not empty")
+        let airport = Airport.airports.first
+        XCTAssert(airport != nil)
+        XCTAssert(airport?.name != nil)
+        XCTAssert(airport?.city != nil)
+        XCTAssert(airport?.longitude != nil)
+        XCTAssert(airport?.latitude != nil)
+        XCTAssert(airport?.country != nil)
+    }
+
 
 }
