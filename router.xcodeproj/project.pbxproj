@@ -43,6 +43,7 @@
 		A50A43B12286C6A5000C18D3 /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43A02286C6A5000C18D3 /* Weak.swift */; };
 		A50A43B22286C6A5000C18D3 /* Withable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43A22286C6A5000C18D3 /* Withable.swift */; };
 		A50A43B52286CB72000C18D3 /* Airline.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43B42286CB72000C18D3 /* Airline.swift */; };
+		A50A43B72286D177000C18D3 /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43B62286D177000C18D3 /* Airport.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		A50A43A22286C6A5000C18D3 /* Withable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Withable.swift; sourceTree = "<group>"; };
 		A50A43B32286C6B6000C18D3 /* HandySwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandySwift.h; sourceTree = "<group>"; };
 		A50A43B42286CB72000C18D3 /* Airline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airline.swift; sourceTree = "<group>"; };
+		A50A43B62286D177000C18D3 /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +247,7 @@
 			children = (
 				A50A438D2286C090000C18D3 /* Route.swift */,
 				A50A43B42286CB72000C18D3 /* Airline.swift */,
+				A50A43B62286D177000C18D3 /* Airport.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 				A50A43862286BABC000C18D3 /* CSVImporter.swift in Sources */,
 				A50A43A92286C6A5000C18D3 /* StringExtension.swift in Sources */,
 				A50A43AA2286C6A5000C18D3 /* DictionaryExtension.swift in Sources */,
+				A50A43B72286D177000C18D3 /* Airport.swift in Sources */,
 				A50A43412286B6C7000C18D3 /* AppDelegate.swift in Sources */,
 				A50A43842286BABC000C18D3 /* TextFile.swift in Sources */,
 				A50A43A62286C6A5000C18D3 /* IntExtension.swift in Sources */,
