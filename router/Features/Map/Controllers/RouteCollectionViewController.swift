@@ -92,7 +92,7 @@ class RouteCollectionViewController: UIViewController {
             viewModel.isSearchButtonEnabled.value = false
             return
         }
-        viewModel.search(text: text) {}
+        viewModel.search(text: text)
     }
 
     @IBAction func closeTapped(_ sender: Any) {
