@@ -10,10 +10,11 @@ import Foundation
 
 // TODO: Localize
 enum TEXTS {
-    static let selectDepartureAndArrival = "Select departure and arrival city"
-    static let departureAirport = "Departure Airport"
-    static let arrivalAirport = "Arrival Airport"
+    static let selectDepartureAndArrival = "Select departure and arrival IATA"
+    static let departureAirport = "Departure IATA"
+    static let arrivalAirport = "Arrival IATA"
     static let search = "Search"
     static let arrival = "Arrival"
     static let departure = "Departure"
+    static let noRouteFound = "No route found for selected location"
 }
