@@ -61,8 +61,10 @@ class RouteCollectionViewController: UIViewController {
             self.viewModel.inputs.selectedAirport(with: item)
             if self.viewModel.editingTextField == .arrival {
                 self.arrivalTextField.text = item
+                self.view.endEditing(true)
             } else {
                 self.departureTextField.text = item
+                self.arrivalTextField.becomeFirstResponder()
             }
         }
         dropDown.width = arrivalTextField.bounds.width
