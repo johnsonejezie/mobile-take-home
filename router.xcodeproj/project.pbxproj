@@ -61,6 +61,14 @@
 		A50A43F722873E9A000C18D3 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43F622873E9A000C18D3 /* UIViewController+Extensions.swift */; };
 		A50A43F922873EC9000C18D3 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43F822873EC9000C18D3 /* UIView+Extensions.swift */; };
 		A50A43FB22874595000C18D3 /* TEXTS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43FA22874595000C18D3 /* TEXTS.swift */; };
+		A50A43FE2287C0DB000C18D3 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43FD2287C0DB000C18D3 /* Graph.swift */; };
+		A50A44002287C35A000C18D3 /* AdjacencyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43FF2287C35A000C18D3 /* AdjacencyList.swift */; };
+		A50A44022287C50C000C18D3 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A44012287C50C000C18D3 /* Vertex.swift */; };
+		A50A44042287C539000C18D3 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A44032287C539000C18D3 /* Edge.swift */; };
+		A50A44062287C96A000C18D3 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A44052287C96A000C18D3 /* MapViewModel.swift */; };
+		A50A44082287FD46000C18D3 /* Dijkstra.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A44072287FD46000C18D3 /* Dijkstra.swift */; };
+		A50A440A2288511C000C18D3 /* LoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A44092288511C000C18D3 /* LoaderViewController.swift */; };
+		A50A440C22885751000C18D3 /* MapViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A440B22885751000C18D3 /* MapViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,6 +152,14 @@
 		A50A43F622873E9A000C18D3 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		A50A43F822873EC9000C18D3 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		A50A43FA22874595000C18D3 /* TEXTS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEXTS.swift; sourceTree = "<group>"; };
+		A50A43FD2287C0DB000C18D3 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		A50A43FF2287C35A000C18D3 /* AdjacencyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjacencyList.swift; sourceTree = "<group>"; };
+		A50A44012287C50C000C18D3 /* Vertex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+		A50A44032287C539000C18D3 /* Edge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
+		A50A44052287C96A000C18D3 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		A50A44072287FD46000C18D3 /* Dijkstra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dijkstra.swift; sourceTree = "<group>"; };
+		A50A44092288511C000C18D3 /* LoaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderViewController.swift; sourceTree = "<group>"; };
+		A50A440B22885751000C18D3 /* MapViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +210,7 @@
 		A50A433F2286B6C7000C18D3 /* router */ = {
 			isa = PBXGroup;
 			children = (
+				A50A43FC2287C0BB000C18D3 /* Graph */,
 				A50A43DA228722E6000C18D3 /* data */,
 				A50A43C62286F96F000C18D3 /* Common */,
 				A50A43B82286ECDA000C18D3 /* Features */,
@@ -217,6 +234,7 @@
 				A50A43CD228710A6000C18D3 /* AirlineTests.swift */,
 				A50A43CF22871107000C18D3 /* RouteTests.swift */,
 				A50A43D1228713B0000C18D3 /* RouteCollectionViewModelTests.swift */,
+				A50A440B22885751000C18D3 /* MapViewModelTests.swift */,
 			);
 			path = routerTests;
 			sourceTree = "<group>";
@@ -360,6 +378,7 @@
 			isa = PBXGroup;
 			children = (
 				A50A43C42286F78F000C18D3 /* RouteCollectionViewModel.swift */,
+				A50A44052287C96A000C18D3 /* MapViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -369,6 +388,7 @@
 			children = (
 				A50A43C02286ED4C000C18D3 /* MapViewController.swift */,
 				A50A43C22286EE0D000C18D3 /* RouteCollectionViewController.swift */,
+				A50A44092288511C000C18D3 /* LoaderViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -438,6 +458,18 @@
 				A50A43ED22872826000C18D3 /* DropDown+Appearance.swift */,
 			);
 			path = src;
+			sourceTree = "<group>";
+		};
+		A50A43FC2287C0BB000C18D3 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				A50A43FD2287C0DB000C18D3 /* Graph.swift */,
+				A50A43FF2287C35A000C18D3 /* AdjacencyList.swift */,
+				A50A44012287C50C000C18D3 /* Vertex.swift */,
+				A50A44032287C539000C18D3 /* Edge.swift */,
+				A50A44072287FD46000C18D3 /* Dijkstra.swift */,
+			);
+			path = Graph;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -584,8 +616,10 @@
 				A50A43A72286C6A5000C18D3 /* TimeIntervalExtension.swift in Sources */,
 				A50A43B02286C6A5000C18D3 /* SortedArray.swift in Sources */,
 				A50A43852286BABC000C18D3 /* StringSource.swift in Sources */,
+				A50A44042287C539000C18D3 /* Edge.swift in Sources */,
 				A50A43B52286CB72000C18D3 /* Airline.swift in Sources */,
 				A50A43882286BABC000C18D3 /* TextFileStreamReader.swift in Sources */,
+				A50A44062287C96A000C18D3 /* MapViewModel.swift in Sources */,
 				A50A43B12286C6A5000C18D3 /* Weak.swift in Sources */,
 				A50A43C52286F78F000C18D3 /* RouteCollectionViewModel.swift in Sources */,
 				A50A43A42286C6A5000C18D3 /* ComparableExtension.swift in Sources */,
@@ -595,6 +629,7 @@
 				A50A43AC2286C6A5000C18D3 /* HSGlobals.swift in Sources */,
 				A50A43862286BABC000C18D3 /* CSVImporter.swift in Sources */,
 				A50A43C82286F9A2000C18D3 /* Observable.swift in Sources */,
+				A50A44002287C35A000C18D3 /* AdjacencyList.swift in Sources */,
 				A50A43A92286C6A5000C18D3 /* StringExtension.swift in Sources */,
 				A50A43F422872826000C18D3 /* DropDownCell.swift in Sources */,
 				A50A43AA2286C6A5000C18D3 /* DictionaryExtension.swift in Sources */,
@@ -606,13 +641,17 @@
 				A50A43842286BABC000C18D3 /* TextFile.swift in Sources */,
 				A50A43A62286C6A5000C18D3 /* IntExtension.swift in Sources */,
 				A50A43F322872826000C18D3 /* DropDown.swift in Sources */,
+				A50A43FE2287C0DB000C18D3 /* Graph.swift in Sources */,
 				A50A43F722873E9A000C18D3 /* UIViewController+Extensions.swift in Sources */,
 				A50A43F522872826000C18D3 /* DropDown+Appearance.swift in Sources */,
 				A50A43872286BABC000C18D3 /* Globals.swift in Sources */,
 				A50A43A82286C6A5000C18D3 /* NSRangeExtension.swift in Sources */,
 				A50A43832286BABC000C18D3 /* Source.swift in Sources */,
+				A50A44022287C50C000C18D3 /* Vertex.swift in Sources */,
 				A50A43F022872826000C18D3 /* DPDConstants.swift in Sources */,
+				A50A44082287FD46000C18D3 /* Dijkstra.swift in Sources */,
 				A50A43892286BABC000C18D3 /* FileSource.swift in Sources */,
+				A50A440A2288511C000C18D3 /* LoaderViewController.swift in Sources */,
 				A50A43A52286C6A5000C18D3 /* ArrayExtension.swift in Sources */,
 				A50A43AF2286C6A5000C18D3 /* Unowned.swift in Sources */,
 				A50A43C12286ED4C000C18D3 /* MapViewController.swift in Sources */,
@@ -627,6 +666,7 @@
 				A50A43D2228713B0000C18D3 /* RouteCollectionViewModelTests.swift in Sources */,
 				A50A43D022871107000C18D3 /* RouteTests.swift in Sources */,
 				A50A43CE228710A6000C18D3 /* AirlineTests.swift in Sources */,
+				A50A440C22885751000C18D3 /* MapViewModelTests.swift in Sources */,
 				A50A43CC22870883000C18D3 /* AirportTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
