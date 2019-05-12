@@ -9,14 +9,18 @@
 import Foundation
 import MapKit
 
-class Airport: Equatable {
+class Airport: Hashable, Equatable {
     static func == (lhs: Airport, rhs: Airport) -> Bool {
-        return lhs.name.lowercased() == rhs.name.lowercased()
+        return lhs.iata.lowercased() == rhs.iata.lowercased()
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(iata)
     }
 
     let name: String
     let city: String
-    let iata: String?
+    let iata: String
     let country: String
     let latitude: Double
     let longitude: Double
@@ -25,7 +29,7 @@ class Airport: Equatable {
         return CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
     }
 
-    init(name: String, city: String, iata: String?, latitude: String, longitude: String, country: String) {
+    init(name: String, city: String, iata: String, latitude: String, longitude: String, country: String) {
         self.name = name
         self.iata = iata
         self.city = city
@@ -43,7 +47,8 @@ class Airport: Equatable {
             return Airport(name: recordValues["Name"]!, city: recordValues["City"]!, iata: recordValues["IATA 3"]!, latitude: recordValues["Latitute "]!, longitude: recordValues["Longitude"]!, country: recordValues["Country"]!)
             }.onFinish { (airports) -> Void in
                 DispatchQueue.main.async {
-                    completion(airports)
+                    let ports = airports.filter{ $0.iata.lowercased() != "\n" }
+                    completion(ports)
                 }
         }
     }
