@@ -45,7 +45,7 @@ final class MapViewModel: MapViewModelType, MapViewModelOutputs, MapViewModelInp
 
 
     func viewDidLoad() {
-        fetchData {}
+        fetchData()
     }
 
     func set(arrAirport: Airport, departureAirport: Airport) {
@@ -56,14 +56,13 @@ final class MapViewModel: MapViewModelType, MapViewModelOutputs, MapViewModelInp
         showLoader.value = false
     }
 
-    func fetchData(_ completion: @escaping (() -> Void)) {
+    func fetchData() {
         Route.parseCSV { (routes) in
             self.routes = routes
             Airport.parseCSV { (airports) in
                 self.airports.value = airports
                 self.createVertexForAllAirport()
                 self.addEdgesToAllVertex()
-                completion()
             }
         }
     }
