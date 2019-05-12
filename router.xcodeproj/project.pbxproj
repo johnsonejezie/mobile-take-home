@@ -39,7 +39,6 @@
 		A50A43B22286C6A5000C18D3 /* Withable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43A22286C6A5000C18D3 /* Withable.swift */; };
 		A50A43B52286CB72000C18D3 /* Airline.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43B42286CB72000C18D3 /* Airline.swift */; };
 		A50A43B72286D177000C18D3 /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43B62286D177000C18D3 /* Airport.swift */; };
-		A50A43BF2286ECF3000C18D3 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50A43BE2286ECF3000C18D3 /* Map.storyboard */; };
 		A50A43C12286ED4C000C18D3 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43C02286ED4C000C18D3 /* MapViewController.swift */; };
 		A50A43C32286EE0D000C18D3 /* RouteCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43C22286EE0D000C18D3 /* RouteCollectionViewController.swift */; };
 		A50A43C52286F78F000C18D3 /* RouteCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A43C42286F78F000C18D3 /* RouteCollectionViewModel.swift */; };
@@ -69,6 +68,7 @@
 		A50A44082287FD46000C18D3 /* Dijkstra.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A44072287FD46000C18D3 /* Dijkstra.swift */; };
 		A50A440A2288511C000C18D3 /* LoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A44092288511C000C18D3 /* LoaderViewController.swift */; };
 		A50A440C22885751000C18D3 /* MapViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A440B22885751000C18D3 /* MapViewModelTests.swift */; };
+		A50A4410228876A9000C18D3 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50A440F228876A9000C18D3 /* Map.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,7 +129,6 @@
 		A50A43B32286C6B6000C18D3 /* HandySwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandySwift.h; sourceTree = "<group>"; };
 		A50A43B42286CB72000C18D3 /* Airline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airline.swift; sourceTree = "<group>"; };
 		A50A43B62286D177000C18D3 /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
-		A50A43BE2286ECF3000C18D3 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		A50A43C02286ED4C000C18D3 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A50A43C22286EE0D000C18D3 /* RouteCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteCollectionViewController.swift; sourceTree = "<group>"; };
 		A50A43C42286F78F000C18D3 /* RouteCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteCollectionViewModel.swift; sourceTree = "<group>"; };
@@ -160,6 +159,7 @@
 		A50A44072287FD46000C18D3 /* Dijkstra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dijkstra.swift; sourceTree = "<group>"; };
 		A50A44092288511C000C18D3 /* LoaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderViewController.swift; sourceTree = "<group>"; };
 		A50A440B22885751000C18D3 /* MapViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModelTests.swift; sourceTree = "<group>"; };
+		A50A440F228876A9000C18D3 /* Map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -369,7 +369,7 @@
 		A50A43BA2286ECDA000C18D3 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				A50A43BE2286ECF3000C18D3 /* Map.storyboard */,
+				A50A440F228876A9000C18D3 /* Map.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -579,7 +579,7 @@
 				A50A43DE228722E6000C18D3 /* routes.csv in Resources */,
 				A50A43E0228722E6000C18D3 /* airports.csv in Resources */,
 				A50A434B2286B6C7000C18D3 /* LaunchScreen.storyboard in Resources */,
-				A50A43BF2286ECF3000C18D3 /* Map.storyboard in Resources */,
+				A50A4410228876A9000C18D3 /* Map.storyboard in Resources */,
 				A50A43482286B6C7000C18D3 /* Assets.xcassets in Resources */,
 				A50A43462286B6C7000C18D3 /* Main.storyboard in Resources */,
 				A50A43EE22872826000C18D3 /* DropDownCell.xib in Resources */,
