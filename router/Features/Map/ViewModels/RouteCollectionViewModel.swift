@@ -9,7 +9,7 @@
 import Foundation
 
 protocol RouteCollectionViewModelInputs {
-    func search(text: String, completion: @escaping (() -> Void))
+    func search(text: String)
     func selectedAirport(with name: String)
 }
 
@@ -28,30 +28,14 @@ protocol RouteCollectionViewModelType {
 
 final class RouteCollectionViewModel: RouteCollectionViewModelType, RouteCollectionViewModelInputs, RouteCollectionViewModelOutputs {
 
-    private var allAirports: [Airport] = []
+    let allAirports: [Airport]
 
-    init() {
-        getAllAirports {}
+    init(allAirport: [Airport]) {
+        self.allAirports = allAirport
     }
 
-    func getAllAirports(_ completion: @escaping (() -> Void)) {
-        Airport.parseCSV { (airports) in
-            self.allAirports = airports
-            completion()
-        }
-    }
-
-    func search(text: String, completion: @escaping (() -> Void)) {
-        if allAirports.isEmpty {
-            Airport.parseCSV { (airports) in
-                self.allAirports = airports
-                self.airports.value = self.allAirports.filter{ $0.city.lowercased().contains(text.lowercased()) }
-                completion()
-            }
-        } else {
-            airports.value = allAirports.filter{ $0.city.lowercased().contains(text.lowercased()) }
-            completion()
-        }
+    func search(text: String) {
+        airports.value = allAirports.filter{ $0.iata.lowercased().contains(text.lowercased()) }
     }
 
     func selectedAirport(with name: String) {
